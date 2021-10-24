@@ -1,0 +1,8 @@
+[flake8]
+exclude = .git,__pycache__,rst/conf.py,old,build,dist,.venv,.mypy_cache
+max-complexity = 10
+max-line-length = 88
+# rules to ignore
+# E501 - line too long          -> to be handled by black
+# W503 - binary operator        -> to be handled by black
+ignore = E501,W503
